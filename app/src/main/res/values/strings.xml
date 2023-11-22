@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simpan Data</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="job">Job</string>
+    <string name="filepath">FilePath</string>
+    <string name="save_button">Save</string>
+    <string name="read_button">Read</string>
+    <string name="clear_button">Clear</string>
+</resources>

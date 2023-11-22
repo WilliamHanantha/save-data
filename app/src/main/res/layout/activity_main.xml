@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="start"
+        android:fontFamily="@font/montserratsemibold"
+        android:layout_margin="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="24dp">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start">
+
+            <EditText
+                android:id="@+id/editTextFilePath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/filepath"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/age"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/editTextJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/job"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/tvTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:scrollbars="vertical"
+                android:layout_weight="1.0"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/save_button"
+            android:layout_marginEnd="20dp"/>
+        <Button
+            android:id="@+id/button_read"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/read_button"/>
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/clear_button"
+            android:layout_marginStart="20dp"/>
+        
+    </LinearLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"/>
+
+</LinearLayout>
